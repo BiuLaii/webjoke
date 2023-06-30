@@ -1,0 +1,186 @@
+/* reser CSS*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family:Arial, Helvetica, sans-serif ;
+}
+
+
+/*
+1. Từ ngoài vào trong
+2. Từ trên xuống dưới 
+3. Tổng quan đến chi tiết
+ */
+
+/*
+1. Vị trí
+2. Kích thước
+3. Màu sắc
+4. Kiểu dáng 
+*/
+:root{
+    --webkit-font-size: 13px;
+}
+
+#header{
+    height: 50px;
+    background-color: white;
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+
+#header .logo{
+    display: inline-block;
+}
+
+#header .user{
+    float: right;
+}
+
+#header .name-user{
+    float: right;
+    display: flex;
+    flex-direction: column;
+}
+
+.name-user a{
+    color: black;
+    text-decoration: none;
+    padding-right: 10px;
+}
+.name-user .name{
+    font-style: italic;
+    font-size: var(--webkit-font-size);
+}
+
+.name-user a:last-child {
+    margin-left: auto;
+}
+
+#header img{
+    width: 40px;
+    height: 40px;
+}
+
+#header .user .img-user{
+    border-radius: 50%;
+}
+
+#slider{
+    background-color: MediumSeaGreen;
+    height: 200px;
+    width: 100%;
+    position: relative;
+}
+
+#slider .text-content{
+    position: absolute;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+
+}
+
+#slider .text-heading{
+    font-size: 30px;
+}
+
+#slider .text-description{
+    font-weight: 250;
+    font-size: var(--webkit-font-size);
+    margin-top: 15px;
+}
+
+#content{
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 50px;
+}
+
+
+#content .content-text .auto-text{
+    font-size: 14px;
+}
+
+#content .horizontal-line{
+    border-top: 1px solid rgb(225, 222, 215);
+    width: 80%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#content .content-button{
+    display: flex;
+}
+
+#content .content-button button{
+    border: none;
+    color: white;
+    padding: 13px 50px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: var(--webkit-font-size);
+    margin: 4px 2px;
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#content .content-button .button-like{
+    background-color: #4CAF50; /* Green */
+    display: inline-block;
+}
+
+#content .content-button .button-dislike{
+    background-color: #008CBA;
+    display: inline-block;
+}
+
+#footer{
+    background-color: whitesmoke;
+    padding: 25px;
+}
+
+#footer .footer-content{
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 10px;
+    text-align: center;
+}
+
+#footer .content-secsion{
+    padding: 15px;
+    padding-bottom: 0%;
+    font-size: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
